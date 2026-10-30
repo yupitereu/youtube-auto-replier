@@ -1,0 +1,33 @@
+{
+  "name": "youtube-auto-replier",
+  "version": "0.3.19",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.11.2",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "fixture": "node scripts/fixture-server.mjs",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@wxt-dev/module-react": "1.2.2",
+    "typescript": "~6.0.0",
+    "wxt": "0.21.5"
+  }
+}
